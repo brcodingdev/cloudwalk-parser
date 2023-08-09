@@ -1,0 +1,71 @@
+package model
+
+// DeathCause cause of death, or kill means
+type DeathCause string
+
+const (
+	MOD_UNKNOWN        DeathCause = "MOD_UNKNOWN"
+	MOD_SHOTGUN        DeathCause = "MOD_SHOTGUN"
+	MOD_GAUNTLET       DeathCause = "MOD_GAUNTLET"
+	MOD_MACHINEGUN     DeathCause = "MOD_MACHINEGUN"
+	MOD_GRENADE        DeathCause = "MOD_GRENADE"
+	MOD_GRENADE_SPLASH DeathCause = "MOD_GRENADE_SPLASH"
+	MOD_ROCKET         DeathCause = "MOD_ROCKET"
+	MOD_ROCKET_SPLASH  DeathCause = "MOD_ROCKET_SPLASH"
+	MOD_PLASMA         DeathCause = "MOD_PLASMA"
+	MOD_PLASMA_SPLASH  DeathCause = "MOD_PLASMA_SPLASH"
+	MOD_RAILGUN        DeathCause = "MOD_RAILGUN"
+	MOD_LIGHTNING      DeathCause = "MOD_LIGHTNING"
+	MOD_BFG            DeathCause = "MOD_BFG"
+	MOD_BFG_SPLASH     DeathCause = "MOD_BFG_SPLASH"
+	MOD_WATER          DeathCause = "MOD_WATER"
+	MOD_SLIME          DeathCause = "MOD_SLIME"
+	MOD_LAVA           DeathCause = "MOD_LAVA"
+	MOD_CRUSH          DeathCause = "MOD_CRUSH"
+	MOD_TELEFRAG       DeathCause = "MOD_TELEFRAG"
+	MOD_FALLING        DeathCause = "MOD_FALLING"
+	MOD_SUICIDE        DeathCause = "MOD_SUICIDE"
+	MOD_TARGET_LASER   DeathCause = "MOD_TARGET_LASER"
+	MOD_TRIGGER_HURT   DeathCause = "MOD_TRIGGER_HURT"
+	MISSIONPACK        DeathCause = "MISSIONPACK"
+	MOD_NAIL           DeathCause = "MOD_NAIL"
+	MOD_CHAINGUN       DeathCause = "MOD_CHAINGUN"
+	MOD_PROXIMITY_MINE DeathCause = "MOD_PROXIMITY_MINE"
+	MOD_KAMIKAZE       DeathCause = "MOD_KAMIKAZE"
+	MOD_JUICED         DeathCause = "MOD_JUICED"
+	MOD_GRAPPLE        DeathCause = "MOD_GRAPPLE"
+)
+
+// MappedDeathCause kill means mapped
+var MappedDeathCause = map[DeathCause]DeathCause{
+	MOD_UNKNOWN:        MOD_UNKNOWN,
+	MOD_SHOTGUN:        MOD_SHOTGUN,
+	MOD_GAUNTLET:       MOD_GAUNTLET,
+	MOD_MACHINEGUN:     MOD_MACHINEGUN,
+	MOD_GRENADE:        MOD_GRENADE,
+	MOD_GRENADE_SPLASH: MOD_GRENADE_SPLASH,
+	MOD_ROCKET:         MOD_ROCKET,
+	MOD_ROCKET_SPLASH:  MOD_ROCKET_SPLASH,
+	MOD_PLASMA:         MOD_PLASMA,
+	MOD_PLASMA_SPLASH:  MOD_PLASMA_SPLASH,
+	MOD_RAILGUN:        MOD_RAILGUN,
+	MOD_LIGHTNING:      MOD_LIGHTNING,
+	MOD_BFG:            MOD_BFG,
+	MOD_BFG_SPLASH:     MOD_BFG_SPLASH,
+	MOD_WATER:          MOD_WATER,
+	MOD_SLIME:          MOD_SLIME,
+	MOD_LAVA:           MOD_LAVA,
+	MOD_CRUSH:          MOD_CRUSH,
+	MOD_TELEFRAG:       MOD_TELEFRAG,
+	MOD_FALLING:        MOD_FALLING,
+	MOD_SUICIDE:        MOD_SUICIDE,
+	MOD_TARGET_LASER:   MOD_TARGET_LASER,
+	MOD_TRIGGER_HURT:   MOD_TRIGGER_HURT,
+	MISSIONPACK:        MISSIONPACK,
+	MOD_NAIL:           MOD_NAIL,
+	MOD_CHAINGUN:       MOD_CHAINGUN,
+	MOD_PROXIMITY_MINE: MOD_PROXIMITY_MINE,
+	MOD_KAMIKAZE:       MOD_KAMIKAZE,
+	MOD_JUICED:         MOD_JUICED,
+	MOD_GRAPPLE:        MOD_GRAPPLE,
+}

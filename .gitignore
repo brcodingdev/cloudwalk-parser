@@ -17,5 +17,9 @@
 # Dependency directories (remove the comment below to include it)
 # vendor/
 
-# Go workspace file
+# Go workspace app
 go.work
+.cpu.prof
+.mem.prof
+.idea/
+.DS_Store
